@@ -9,11 +9,20 @@ function check() {
 function caracteres() {
   var number = document.querySelector('.counter');
   var counter = number.innerHTML = 140 - txtArea.value.length;
+  if (counter > 20){
+    number.style.color = '#1DA1F2';
+  } else if (counter < 21 && counter > 10){
+    number.style.color = '#1987CE';
+  } else if (counter <= 10 && counter > -1) {
+    number.style.color = '#F70E0E';
+  } else if (counter <= -1){
+    number.style.color = '#C30808';
+  }
 }
 
 function checkEmpty(){
   var btn = document.getElementById('btn');
-  if (txtArea.value ==''){
+  if (txtArea.value ==='' || txtArea.value.length > 140){
     btn.disabled = true;
   } else if(txtArea.value !=''){
     btn.disabled = false;
