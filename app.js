@@ -4,6 +4,7 @@ var txtArea = document.getElementById('msg');
 function check() {
   checkEmpty();
   caracteres();
+  autoResize();
 }
 
 function caracteres() {
@@ -29,27 +30,40 @@ function checkEmpty(){
   }
 }
 
+function autoResize(){
+  if (txtArea.scrollHeight > txtArea.offsetHeight) {
+    var numberRows = document.getElementById('msg').rows;
+    var newRows = 1 + numberRows;
+    document.getElementById('msg').rows = newRows;
+  }
+}
 
 function tweetar(){
+  var data = new Date();
+  var hora = data.getHours();
+  var minuto = data.getMinutes();
+  var horario = hora + ':' + minuto;
   var text = txtArea.value;
   var sectionTweets = document.querySelector('.ListTweets');
   var tweet = document.createElement('article');
-      // var html = '<article class="tweet"> %msg%</article>';
-      // var newHtml = html.replace('%msg%', text);
-      // document.querySelector('.ListTweets').insertAdjacentHTML('beforeend', newHtml);
   tweet.classList.add('tweet');
   var paragraph = document.createElement('p');
   paragraph.innerHTML = text;
   tweet.appendChild(paragraph);
+  var paragraphTwo = document.createElement('p');
+  paragraphTwo.innerHTML = horario;
+  var dateParagraph = document.createElement('p');
+  dateParagraph.innerHTML = horario;
+  tweet.appendChild(dateParagraph);
   sectionTweets.appendChild(tweet);
   document.getElementById('msg').value = '';
 }
 
+// new Date().getTime()
 txtArea.addEventListener('keyup', check);
 btnTweet.addEventListener('click', tweetar);
-
 txtArea.addEventListener('keypress', function(event){
-  if(event.code === 'Enter') {
+  if(event.code === 'Enter' && txtArea.value.length > 140) {
     var numberRows = document.getElementById('msg').rows;
     var newRows = 1 + numberRows;
     document.getElementById('msg').rows = newRows;
