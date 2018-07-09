@@ -47,3 +47,13 @@ function tweetar(){
 
 txtArea.addEventListener('keyup', check);
 btnTweet.addEventListener('click', tweetar);
+
+txtArea.addEventListener('keypress', function(event){
+  if(event.code === 'Enter') {
+    var numberRows = document.getElementById('msg').rows;
+    var newRows = 1 + numberRows;
+    document.getElementById('msg').rows = newRows;
+
+  }
+});
+// event é um obj do evento escutado.

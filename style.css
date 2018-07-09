@@ -1,0 +1,17 @@
+.form, #btn, .tweet {
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.form{
+  background-color: #FFFFFF;
+}
+
+#btn {
+  background-color: #FFFFFF;
+}
+
+textarea {
+  resize: none;
+}
