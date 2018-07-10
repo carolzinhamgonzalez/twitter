@@ -1,19 +1,19 @@
 ﻿VERSÃO 0.0.1
   -  Crie um formulário que permita inserir um texto e um botão para "twittar".
       .Dentro de uma div (ou outro box do html) fazer:
-        .um form com um input tipo texto
+        .um form
         .inserir o texto "O que está acontecendo?" para aparecer enquanto o usuário não escreve nada.
         .botão para twittar - Precisa ser no JS
   -  Adicione um evento de click ao botão ou de submit no formulário.
   -  No evento, obter o texto.
   -  Adicione o texto ao HTML. (o texto inserido pelo usuário)
     .o texto irá para uma nova caixa(div? section? ver melhor tag)
-COMITAR 0.0.1 form e tweet
+COMITAR 0.0.1 form e tweetar
 
   CSS
   - estilizar o formulário
-    .Inserir fonte no texto
-    .Inserir fundo branco
+    ok .Inserir fonte no texto
+    ok .Inserir fundo branco
     .Inserir linha contínua no fim da inserção de texto
       .linha contínua é cinza enquanto o usuário não escreve nada.
       . linha contínua fica azul quando o usuário começa a escrever.
@@ -64,23 +64,23 @@ COMITAR 0.0.6
 
 CSS
 - Head
-  .barra fixa azul
-  .div com logo + texto - REALMENTE PRECISA? Não dá pra fazer no Head?
-  .inserir logo do twitter (passarinho)
-  .inserir texto TWITTER com fonte similar
-  .centralizar logo+texto
+  ok .barra fixa azul
+  ok .div com logo + texto - REALMENTE PRECISA? Não dá pra fazer no Head?
+  ok .inserir logo do twitter (passarinho)
+  ok .inserir texto TWITTER com fonte similar
+  ok .centralizar logo+texto
 COMITAR 0.0.6 + Head
 
 - Body
   .inserir plano de fundo
-  .inserir box de apresentação
-    .Inserir fonte no texto
-    .Inserir fundo branco
-  .centralizar box de apresentação e form
+  ok .inserir box de apresentação
+    ok .Inserir fonte no texto
+    ok .Inserir fundo branco
+  ok .centralizar box de apresentação e form
     .posso deixar na mesma div o box e o form e tentar por space-around
     .ou deixo fora, uso absolute e para o box-left e para o form-right - PRECISA ESTAR NA MESMA DIV MESMO ASSIM?
       Posso dar um padding ou margin para distanciar do head inclusive.
-  .posicionar tweet
-    .centralizado na página
-    .ter espaçamento entre os box acima e o tweet
+  ok .posicionar tweet
+    ok .centralizado na página
+    ok .ter espaçamento entre os box acima e o tweet
 COMITAR 0.0.6 pronto

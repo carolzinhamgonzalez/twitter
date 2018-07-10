@@ -2,30 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title></title>
+    <!-- fontes utilizadas  -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <!-- ícones utilizados -->
+    <link href="https://file.myfontastic.com/E2rT9D9xcxaxuzrYNBcNdY/icons.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <!-- <img src="" /> PASSARINHO DO TWITTER -->
+      <span class="icon-twitter"> </span>
       <h1> TWITTER </h1>
     </header>
     <main>
-      <section class="profile">
-        <h2> Blabla </h2>
-        <p> bla bla bla </p>
-      </section>
-      <section class="form">
-        <!-- <form> -->
+      <div class="profileForm">
+        <section class="profile">
+          <h2> Olá Mundo! </h2>
+          <p> Fique a vontade para deixar mensagens.</p>
+          <p> Carol Gonzalez =)</p>
+        </section>
+        <section class="form">
           <textarea id="msg" placeholder="O que está acontecendo?" rows="5" cols="28" wrap="hard"></textarea>
+          <br> </br>
           <button id="btn" disabled> Tweetar </button>
           <span class="counter"> 140 </span>
-        <!-- </form> -->
-      </section>
+        </section>
+      </div>
       <section class="ListTweets">
-        <!-- <article class="tweet"> %msg%</article> -->
       </section>
-  </main>
+      <!-- <img src="655385.jpg"> -->
+    </main>
+
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

@@ -25,8 +25,10 @@ function checkEmpty(){
   var btn = document.getElementById('btn');
   if (txtArea.value ==='' || txtArea.value.length > 140){
     btn.disabled = true;
+    btn.style.background = '#969393';
   } else if(txtArea.value !=''){
     btn.disabled = false;
+    btn.style.background = '#1DA1F2';
   }
 }
 
@@ -46,20 +48,20 @@ function tweetar(){
   var text = txtArea.value;
   var sectionTweets = document.querySelector('.ListTweets');
   var tweet = document.createElement('article');
-  tweet.classList.add('tweet');
   var paragraph = document.createElement('p');
+  paragraph.classList.add('tweet');
   paragraph.innerHTML = text;
   tweet.appendChild(paragraph);
   var paragraphTwo = document.createElement('p');
   paragraphTwo.innerHTML = horario;
   var dateParagraph = document.createElement('p');
+  dateParagraph.classList.add('dateParagraph');
   dateParagraph.innerHTML = horario;
   tweet.appendChild(dateParagraph);
   sectionTweets.appendChild(tweet);
   document.getElementById('msg').value = '';
 }
 
-// new Date().getTime()
 txtArea.addEventListener('keyup', check);
 btnTweet.addEventListener('click', tweetar);
 txtArea.addEventListener('keypress', function(event){

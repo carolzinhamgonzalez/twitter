@@ -1,17 +1,134 @@
-.form, #btn, .tweet {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*box-sizing: border-box significa que a altura e largura do meu elemento será considerada a partir da borda.
+é bom zerar margem e padding para o site não ser afetado pelo padrão de diferentes navegadores*/
+
+html{
+  background-image: url(tardis.jpg);
+}
+
+header{
+  position: fixed;
+  background-color: #1DA1F2;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: Noto Sans;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.icon-twitter{
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+main {
+  padding-top: 50px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.profileForm{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.profile{
+  background-color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  margin-right: 300px;
+  width: 300px;
+}
+
+.profile p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form{
+  background-color: #FFFFFF;
+  border: none;
+}
+
+#msg{
+  border: none;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.line{
+  height: 6px;
+  width: 100px;
+  border: none;
+}
+
+#btn {
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+
+}
+
+.counter{
+  margin-left: 90px;
+
+}
+textarea {
+  resize: none;
+}
+
+.ListTweets{
+  margin-top: 50px;
+  margin-bottom: 5px;
+  padding-top: 80px;
+  width: 80%;
+  background-color: none;
+}
+
+article{
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 1px;
+}
+
+.tweet{
   font-family: Noto Sans;
   font-weight: 400;
   font-size: 14px;
 }
 
-.form{
-  background-color: #FFFFFF;
+.dateParagraph{
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 10px;
+  color: #969393;
 }
 
-#btn {
-  background-color: #FFFFFF;
-}
-
-textarea {
-  resize: none;
-}
+/* color: #969393; */
