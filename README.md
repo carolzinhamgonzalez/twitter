@@ -1,12 +1,12 @@
 # Protótipo do Twitter
-*Realizado em 09/07/2018*
-*Projeto requisitado no Sprint 2 da Laboratória - Bootcamp de programação para mulheres <3*
+###### *Realizado em 09/07/2018.*
+###### *Projeto requisitado no Sprint 2 da Laboratória - Bootcamp de programação para mulheres <3*
 
 ## Objetivo
 Fazer uma página inspirada no feed de notícias do Twitter, conforme os requisitos de cada versão solicitada. [Veja o resultado.](https://carolzinhamgonzalez.github.io/twitter/)
 (Descrição das versões a seguir)
 
-![Protótipo do Twitter](/documents/Laboratória/Sprint2/desafio2/tw.png)
+![Protótipo do Twitter](https://user-images.githubusercontent.com/26677793/47969608-362a6e00-e061-11e8-98b4-19a5cc654ed1.png)
 
 ### Requisito por versão
 #### Versão 0.0.1
